@@ -1,8 +1,7 @@
 /* Setting up our grid */
 body {
   margin:0;
-  background-color: #473D32;
-
+  background-color: #ffffff;
 }
 
 .container {
@@ -13,6 +12,11 @@ body {
 }
 .seven:first-child,.eight:first-child, .nine:first-child, .ten:first-child,.eleven:first-child,.five:first-child, .four:first-child, .three:first-child, .two:first-child, .one:first-child, .six:first-child {
   margin-left: 0; /* This line of code makes the left-most column align to the left of the screen */
+}
+
+.twelve {
+  width:100%;
+  float:left;
 }
 .eleven {
 
@@ -53,7 +57,7 @@ body {
 .four {
   width: 32%;
   float:left;
-  margin-left: 2%;
+
 }
 .three {
   width: 23.5%;
@@ -73,11 +77,11 @@ body {
   margin-left: 2%;
 }
 .row {
-  min-width:1000px;
+
   width: 100%;
   clear: both; /* Clear creates new styles for the next row */
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 
 }
 

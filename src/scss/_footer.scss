@@ -1,0 +1,16 @@
+.footer {
+  width: 100%;
+  height: 100%;
+  background-color: #999999;
+
+  .footertitle {
+    font-family: $flat-text;
+    font-weight: bold;
+    color: $medium-gray;
+  }
+
+  .footertext {
+    font-family: $flat-text;
+    color: $medium-gray;
+  }
+}
