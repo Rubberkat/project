@@ -1,0 +1,44 @@
+.menucontainer {
+  float:right;
+  margin-bottom:35px;
+  list-style-type: none;
+  overflow: hidden;
+  font-family: $flat-text;
+  font-size:18px;
+
+  li {
+    display: inline-block;
+
+  }
+
+  a {
+    color: $medium-gray;
+    text-decoration: none;
+    padding:12px;
+  }
+
+  :last-child {
+    padding-right:0px;
+  }
+
+}
+
+.logo {
+  display: inline-block;
+
+  .mainlogo {
+    float:left;
+    font-family: $title-text;
+    color: $title-red;
+    font-size:27px;
+
+  }
+
+  .sublogo {
+    font-family: $flat-text;
+    color: $sublogo-black;
+    display: block;
+  }
+
+}
+
