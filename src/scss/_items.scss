@@ -86,6 +86,7 @@
 .company {
   padding-top:50px;
   padding-bottom:10px;
+  border-top: 2px solid $subtitle-gray;
 }
 
 .list1, .list3{
@@ -195,13 +196,24 @@
   font-size: 33px;
   padding: 15px 0 15px 0;
   border-top: 2px solid $subtitle-gray;
+  position: relative;
+  cursor: pointer;
 }
 
-.dropdown-title:nth-child(5) {
-  border-bottom: 2px solid $subtitle-gray;
+
+.dropdown-content {
+  font-size: 20px;
+  font-family: $flat-text;
+  color: $medium-gray;
+  width:540px;
+  padding-bottom:30px;
 }
 
-
+.dropdown-image {
+  float:right;
+  width:50px;
+  height:50px;
+}
 
 iframe {
   padding-top:50px;

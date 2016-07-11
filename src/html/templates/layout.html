@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script type="text/javascript" src="../src/jquery-3.0.0.js"></script>
     <title>{% block title %} {% endblock %}</title>
     <link rel="stylesheet" href="main.css">
 </head>
@@ -150,12 +151,42 @@
     </div>
 
     <div class="row">
+
         <div class="opdrachten">Loremipsum loremipsum</div>
-        <div class="dropdown-title">LOREMIPSUM LOREM IPSUM</div>
-        <div class="dropdown-content"></div>
+
+        <div class="dropdown">
+            <div class="dropdown-title">LOREMIPSUM LOREM IPSUM</div>
+
+            <div class="dropdown-content">
+                <div class="dropdown-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, alias
+                atque
+                consequuntur facilis fuga fugit inventore ipsum iusto magnam modi molestias necessitatibus nisi odit,
+                quisquam rem rerum sed tempora temporibus?
+                </div>
+                {#<img src="../src/images/52.jpg" class="dropdown-image">#}
+            </div>
+
+
+        </div>
         <div class="dropdown-title">LOREMIPSUM LOREMIPSUM</div>
+        <div class="dropdown-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, alias
+            atque
+            consequuntur facilis fuga fugit inventore ipsum iusto magnam modi molestias necessitatibus nisi odit,
+            quisquam rem rerum sed tempora temporibus?
+        </div>
+
         <div class="dropdown-title">LOREMIPSUM LOREMIPSUM</div>
+        <div class="dropdown-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, alias
+            atque
+            consequuntur facilis fuga fugit inventore ipsum iusto magnam modi molestias necessitatibus nisi odit,
+            quisquam rem rerum sed tempora temporibus? consequuntur facilis fuga fugit inventore ipsum iusto magnam modi
+            molestias necessitatibus nisi odit,
+            quisquam rem rerum sed tempora temporibus?
+
+        </div>
     </div>
+    <script src="../src/javascript.js"></script>
 
     <div class="row">
         <div class="company">LOREMIPSUM</div>
@@ -167,6 +198,7 @@
 <div class="row">
     <br>
 </div>
+
 <div class="row">
     {% include "footer.html" %}
 </div>
