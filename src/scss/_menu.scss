@@ -1,6 +1,6 @@
 .menucontainer {
-  float:right;
   margin-bottom:35px;
+  float:right;
   list-style-type: none;
   overflow: hidden;
   font-family: $flat-text;
@@ -12,9 +12,9 @@
   }
 
   a {
-    color: $medium-gray;
-    text-decoration: none;
     padding:12px;
+    text-decoration: none;
+    color: $medium-gray;
   }
 
   :last-child {
@@ -34,22 +34,20 @@
   }
 
   .mainlogo {
-    float:left;
-    font-family: $title-text;
-    color: $title-red;
-    font-size:27px;
     text-decoration: none;
     list-style-type: none;
     overflow: hidden;
+    float:left;
+    font-family: $title-text;
+    font-size:27px;
+    color: $title-red;
   }
 
   .sublogo {
+    display: block;
     font-family: $flat-text;
     color: $sublogo-black;
-    display: block;
 
   }
-
-
 }
 

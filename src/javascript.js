@@ -14,8 +14,6 @@
 
 $(function() {
 
-    var content = $(".dropdown");
-
     var title = $('.dropdown-title').click(function() {
 
             var $parent = $(this).parent();
@@ -27,5 +25,6 @@ $(function() {
 
             $('.dropdown').removeClass('active');
             $parent.addClass('active');
+
     });
 });
