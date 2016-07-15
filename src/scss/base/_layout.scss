@@ -15,8 +15,9 @@ html {
 }
 .container {
   margin:auto;
-  max-width:1280px +40px;
+  max-width:1280 + 40px;
   padding:20px;
+
 }
 .seven:first-child,.eight:first-child, .nine:first-child, .ten:first-child,.eleven:first-child,.five:first-child, .four:first-child, .three:first-child, .two:first-child, .one:first-child, .six:first-child {
   margin-left: 0; /* This line of code makes the left-most column align to the left of the screen */
