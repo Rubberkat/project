@@ -79,14 +79,14 @@
 }
 
 .opdrachten {
-  padding-top: 20px;
-  padding-bottom: 50px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .company {
   padding-top:50px;
   padding-bottom:10px;
-  border-top: 2px solid $subtitle-gray;
+
 }
 
 .list1, .list3{
@@ -132,11 +132,16 @@
   float:left;
 }
 
-.panel {
-  width:34%;
-  height:500px;
-  background-color:$panel-gray;
-  float:left;
+.panel, .last-panel {
+  width: 34%;
+  height: 500px;
+  background-color: $panel-gray;
+  float: left;
+}
+
+  .last-panel {
+    margin-bottom: 100px;
+  }
 
 
   .paneltitle {
@@ -144,7 +149,7 @@
     padding-top:60px;
     font-family: $title-text;
     font-size:44px;
-    width:300px;
+
   }
 
   .paneltext {
@@ -154,7 +159,7 @@
     font-size:20px;
     width:250px;
   }
-}
+
 
 
 .panelleft {
@@ -182,40 +187,80 @@
   }
 }
 
+
+.dropdown-container {
+  background-color: $panel-gray;
+  position: relative;
+  display: block;
+  padding-bottom:45px;
+}
+
+.dropdown-container:before{
+  content: ' ';
+  background-color: $panel-gray;
+  height:100%;
+  width:1000%;
+  position: absolute;
+  left:-500%;
+  box-shadow: 0px 0px 15px rgba(0,0,0, 0.2 );
+  z-index: -1;
+}
+
 .dropdown-title {
   font-family: $title-text;
   color:$title-red;
   font-size: 33px;
-  padding: 15px 0 15px 0;
+  padding-top:20px;
+  padding-bottom:20px;
   border-top: 2px solid $subtitle-gray;
   position: relative;
   cursor: pointer;
-
-
 }
+
+
 
 .dropdown-title:after {
   content: '>';
   float:right;
-  -webkit-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
-.dropdown-title.active:after {
+.dropdown:last-child {
+  .dropdown-title{
+    border-bottom: 2px solid $subtitle-gray;
+  }
+}
+
+.dropdown.active .dropdown-title:after {
   -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .dropdown-content {
+  max-height:0;
   font-size: 20px;
   font-family: $flat-text;
   color: $medium-gray;
-  width:540px;
-  padding-bottom:30px;
+  overflow: hidden;
+  width:50%;
+  -webkit-transition: all 0.1s ease-in;
+  -moz-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+
 }
 
-.dropdown-image {
-  float:right;
-  width:50px;
-  height:50px;
+.dropdown.active .dropdown-content{
+  display:block;
+  max-height: 500px;
+}
+
+.dropdown-content p {
+  padding-bottom:25px;
+
 }
 
 iframe {

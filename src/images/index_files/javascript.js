@@ -14,18 +14,14 @@
 
 $(function() {
 
-    var content = $(".dropdown");
+    var content = $(".dropdown-content");
 
     var title = $('.dropdown-title').click(function() {
 
-            var $parent = $(this).parent();
+        $(this).toggleClass('active');
+        $(this).next().toggleClass('active');
 
-            if ($parent.hasClass('active')) {
-                $parent.removeClass('active');
-                return false;
-            }
-
-            $('.dropdown').removeClass('active');
-            $parent.addClass('active');
+        content.not($(this).next()).removeClass('active');
+        title.not(this).removeClass('active');
     });
 });

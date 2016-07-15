@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <script type="text/javascript" src="../src/jquery-3.0.0.js"></script>
-    <title>{% block title %} {% endblock %}</title>
+    <title>Homepage</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
 <div class="container">
+
+
     <div class="row">
         <div class="logo">
-            <div class="mainlogo">LOREMIPSUM</div>
-            <div class="sublogo">loregi lo loremips</div>
+            <div class="mainlogo"><a href="index.html">LOREMIPSUM</a></div>
+            <div class="sublogo"><a href="index.html">loregi lo loremips</a></div>
         </div>
         {% include "menu.html" %}
     </div>
+
 
     <div class="row">
         <div class="imagecontainer">
@@ -60,8 +63,8 @@
         <div class="waarom">LOREMI LOREMI LOR LOREMIPSUM</div>
     </div>
 
-    <div class="row">
 
+    <div class="row">
         <div class="items">
             <ul class="list1">
                 <li class="item1">LOREM IPSUM LOREM IPSUM</li>
@@ -95,9 +98,11 @@
 
     </div>
 
+
     <div class="row">
         <div class="woord">LOREMIPSUML ORE MIP SUMLO</div>
     </div>
+
 
     <div class="row">
         <div class="wrapperpanel">
@@ -116,6 +121,7 @@
         </div>
     </div>
 
+
     <div class="row">
         <div class="wrapperpanel">
             <div class="panelleft">
@@ -133,11 +139,12 @@
         <img src="../src/images/man1.jpg" class="woman1">
     </div>
 
+
     <div class="row">
         <div class="wrapperpanel">
             <img src="../src/images/woman2.jpg" class="woman1">
 
-            <div class="panel">
+            <div class="last-panel">
                 <div class="paneltitle">
                     LOREM IPSUM LOREM IPSUM
                 </div>
@@ -150,43 +157,46 @@
         </div>
     </div>
 
+
     <div class="row">
-
+        <div class="dropdown-container">
         <div class="opdrachten">Loremipsum loremipsum</div>
-
         <div class="dropdown">
             <div class="dropdown-title">LOREMIPSUM LOREM IPSUM</div>
-
             <div class="dropdown-content">
                 <div class="dropdown-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, alias
-                atque
-                consequuntur facilis fuga fugit inventore ipsum iusto magnam modi molestias necessitatibus nisi odit,
-                quisquam rem rerum sed tempora temporibus?
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, alias
+                    atque consequuntur facilis fuga fugit inventore ipsum iusto magnam modi molestias necessitatibus
+                    nisi odit, quisquam rem rerum sed tempora temporibus? Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Accusantium, alias atque consequuntur facilis fuga fugit inventore ipsum iusto
+                    magnam modi molestias necessitatibus nisi odit, quisquam rem rerum sed tempora temporibus? Lorem
+                    ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, alias atque consequuntur
+                    facilis fuga fugit inventore ipsum iusto magnam modi molestias necessitatibus nisiodit, quisquam
+                    rem rerum sed tempora temporibus?</p>
                 </div>
                 {#<img src="../src/images/52.jpg" class="dropdown-image">#}
             </div>
-
-
-        </div>
-        <div class="dropdown-title">LOREMIPSUM LOREMIPSUM</div>
-        <div class="dropdown-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, alias
-            atque
-            consequuntur facilis fuga fugit inventore ipsum iusto magnam modi molestias necessitatibus nisi odit,
-            quisquam rem rerum sed tempora temporibus?
         </div>
 
+        <div class="dropdown">
         <div class="dropdown-title">LOREMIPSUM LOREMIPSUM</div>
-        <div class="dropdown-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, alias
-            atque
-            consequuntur facilis fuga fugit inventore ipsum iusto magnam modi molestias necessitatibus nisi odit,
+        <div class="dropdown-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, alias
+            atque consequuntur facilis fuga fugit inventore ipsum iusto magnam modi molestias necessitatibus nisi odit,
+            quisquam rem rerum sed tempora temporibus?</p>
+        </div>
+        </div>
+
+        <div class="dropdown">
+        <div class="dropdown-title">LOREMIPSUM LOREMIPSUM</div>
+        <div class="dropdown-content"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, alias
+            atque consequuntur facilis fuga fugit inventore ipsum iusto magnam modi molestias necessitatibus nisi odit,
             quisquam rem rerum sed tempora temporibus? consequuntur facilis fuga fugit inventore ipsum iusto magnam modi
-            molestias necessitatibus nisi odit,
-            quisquam rem rerum sed tempora temporibus?
-
+            molestias necessitatibus nisi odit, quisquam rem rerum sed tempora temporibus?</p>
         </div>
     </div>
-    <script src="../src/javascript.js"></script>
+    </div>
+    </div>
 
     <div class="row">
         <div class="company">LOREMIPSUM</div>
@@ -202,5 +212,6 @@
 <div class="row">
     {% include "footer.html" %}
 </div>
+<script src="../src/javascript.js"></script>
 </body>
 </html>

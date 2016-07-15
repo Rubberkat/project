@@ -26,19 +26,30 @@
 .logo {
   display: inline-block;
 
+
+  a {
+    text-decoration: none;
+    color:inherit;
+
+  }
+
   .mainlogo {
     float:left;
     font-family: $title-text;
     color: $title-red;
     font-size:27px;
-
+    text-decoration: none;
+    list-style-type: none;
+    overflow: hidden;
   }
 
   .sublogo {
     font-family: $flat-text;
     color: $sublogo-black;
     display: block;
+
   }
+
 
 }
 
