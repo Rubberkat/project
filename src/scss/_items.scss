@@ -246,7 +246,7 @@
   font-family: $flat-text;
   color: $medium-gray;
   overflow: hidden;
-  width:50%;
+  width:40%;
   -webkit-transition: all 0.1s ease-in;
   -moz-transition: all 0.1s ease-in;
   transition: all 0.1s ease-in;
@@ -260,9 +260,16 @@
 
 .dropdown-content p {
   padding-bottom:25px;
+  position: relative;
+  float:left;
 
 }
 
+.dropdown-image {
+  width:50%;
+  float:left;
+}
 iframe {
   padding-top:50px;
+  padding-bottom:50px;
 }
